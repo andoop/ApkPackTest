@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffececec" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/include_head_pepal" layout="@layout/include_head_pepal" />
+    <ImageView android:id="@id/activity_bind_fragment_loading_iv_top_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/img_loading_top_line" android:scaleType="fitXY" android:layout_below="@id/include_head_pepal" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/bg_error" android:scaleType="fitXY" android:layout_below="@id/activity_bind_fragment_loading_iv_top_line" />
+    <ImageView android:background="#ccffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:layout_below="@id/activity_bind_fragment_loading_iv_top_line" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/activity_bind_fragment_loading_iv_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_lock" />
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="任务大厅\n解锁中..." android:layout_alignBottom="@id/activity_bind_fragment_loading_iv_loading" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

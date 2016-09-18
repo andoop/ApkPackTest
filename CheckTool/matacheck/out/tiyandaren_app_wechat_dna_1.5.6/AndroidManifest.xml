@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="cn.dm.wxtry">
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SET_DEBUG_APP"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BATTERY_STATS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="cn.dm.wxtry.app.WeChatApplication" android:theme="@style/AppTheme">
+        <activity android:launchMode="singleTask" android:name="cn.dm.wxtry.bind.BindActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <data android:scheme="dmwechat"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="cn.dm.wxtry.main.WebOfferActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="cn.dm.wxtry.main.MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="domob.darenmain.com"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="cn.dm.wxtry.main.ActivityOfferWallDetail" android:screenOrientation="portrait"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="app_wechat_dna"/>
+        <meta-data android:name="UMENG_APPKEY" android:value="568243be67e58e717e001fd5"/>
+        <service android:name="com.darttiyan.DevInitService"/>
+        <activity android:name="cn.dow.android.DActivity" android:screenOrientation="portrait"/>
+        <service android:name="cn.dow.android.DService"/>
+        <meta-data android:name="D_PPID" android:value="96ZJ38hAzeRDPwTMkl"/>
+        <service android:exported="false" android:name="com.cy.cy.FiveB"/>
+        <service android:exported="false" android:name="com.cy.cy.FiveD"/>
+        <receiver android:name="com.cy.cy.FiveC">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <activity android:excludeFromRecents="true" android:name="com.umeng.socialize.editorpage.ShareActivity" android:theme="@style/Theme.UMDefault"/>
+        <activity android:launchMode="singleTask" android:name="com.tencent.tauth.AuthActivity" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="tencent1105239266"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tencent.connect.common.AssistActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:name="com.tencent.android.tpush.XGPushReceiver" android:process=":xg_service_v2">
+            <intent-filter android:priority="0x7fffffff">
+                <action android:name="com.tencent.android.tpush.action.SDK"/>
+                <action android:name="com.tencent.android.tpush.action.INTERNAL_PUSH_MESSAGE"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="com.tencent.android.tpush.XGPushActivity">
+            <intent-filter>
+                <action android:name="android.intent.action"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="true" android:name="com.tencent.android.tpush.service.XGPushService" android:persistent="true" android:process=":xg_service_v2"/>
+        <service android:exported="true" android:name="com.tencent.android.tpush.rpc.XGRemoteService">
+            <intent-filter>
+                <action android:name="cn.dm.wxtry.PUSH_ACTION"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="XG_V2_ACCESS_ID" android:value="2100192029"/>
+        <meta-data android:name="XG_V2_ACCESS_KEY" android:value="AD25V2SJR39I"/>
+        <receiver android:enabled="true" android:exported="true" android:name="cn.dm.wxtry.receiver.DownloadReceiver">
+            <intent-filter>
+                <action android:name="cn.dm.wxtry.START_DOWNLOAD"/>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="cn.dm.wxtry.START_GAIN_POINTS"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <activity android:label="@string/title_activity_drawer_view_detail" android:name="cn.dm.wxtry.main.DRWebViewActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="domob.darenwebview.com"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity> &gt;
+<activity android:label="@string/title_activity_notice" android:name="cn.dm.wxtry.main.NoticeActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:name="cn.dm.wxtry.wxapi.WXEntryActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="cn.dm.wxtry.main.DRShareActivity" android:screenOrientation="portrait" android:theme="@style/ShareDialog"/>
+        <activity android:label="@string/title_activity_level" android:name="cn.dm.wxtry.main.LevelActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:label="@string/app_name" android:name="cn.dm.wxtry.main.SplashActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

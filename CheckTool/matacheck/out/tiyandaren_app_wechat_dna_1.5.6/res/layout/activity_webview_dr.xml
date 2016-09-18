@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/activity_drawer_view_detail_head" layout="@layout/include_head_pepal" />
+    <cn.dm.wxtry.view.CustomWebView android:id="@id/activity_drawer_view_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

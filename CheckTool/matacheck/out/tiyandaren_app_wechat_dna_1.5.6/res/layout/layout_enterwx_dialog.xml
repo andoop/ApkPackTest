@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/layout_enterwx_fl" android:background="#00000000" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:background="@drawable/tanchuang_enterwx" android:layout_width="@dimen/dialog_drawer_width" android:layout_height="@dimen/dialog_drawer_height">
+            <ImageView android:id="@id/layout_enterwx_tips" android:padding="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" android:src="@drawable/tips" android:layout_centerHorizontal="true" />
+            <ImageView android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/tips_enter_wx" android:layout_centerInParent="true" />
+            <ImageButton android:id="@id/layout_enterwx_btjr" android:background="@drawable/btn_jinruweiixn" android:layout_width="167.0dip" android:layout_height="36.0dip" android:layout_marginBottom="23.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <ImageButton android:id="@id/layout_enterwx_btfh" android:background="@drawable/btn_fanhui" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/layout_enterwx_fl" android:layout_alignRight="@id/layout_enterwx_fl" />
+</RelativeLayout>

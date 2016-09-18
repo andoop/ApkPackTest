@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layout_special_gv_item_other_rootview" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="8.0dip">
+        <com.nb.library.customview.CircleImageView android:id="@id/layout_special_gv_item_other_iv_icon" android:layout_width="65.0dip" android:layout_height="65.0dip" android:src="@drawable/zhaomu" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff000000" android:id="@id/layout_special_gv_item_other_tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="大使招募" android:layout_below="@id/layout_special_gv_item_other_iv_icon" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/layout_special_gv_item_other_tv_tags" android:background="@drawable/bg_special_gv_item_tag_other" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="new" android:layout_toRightOf="@id/layout_special_gv_item_other_tv_name" android:layout_alignTop="@id/layout_special_gv_item_other_tv_name" />
+    </RelativeLayout>
+</FrameLayout>

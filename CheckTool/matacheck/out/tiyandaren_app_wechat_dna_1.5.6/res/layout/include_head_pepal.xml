@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/include_head_pepal" android:background="#ff1d1d1d" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/include_head_pepal_iv_menu" android:visibility="gone" android:layout_width="36.0dip" android:layout_height="48.0dip" android:src="@drawable/icon_left_menu" android:scaleType="center" />
+    <com.nb.library.customview.CircleImageView android:id="@id/include_head_pepal_iv_user_ava" android:visibility="gone" android:layout_width="42.0dip" android:layout_height="42.0dip" android:layout_marginLeft="24.0dip" android:src="@drawable/ic_launcher" android:layout_centerVertical="true" app:border_width="3.0dip" app:border_color="#ffffffff" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <ImageView android:id="@id/include_head_pepal_iv_back_2_wx" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/icon_notice" android:scaleType="center" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/include_head_pepal_iv_notice" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_margin="6.0dip" android:src="@drawable/redpoint" android:layout_alignParentRight="true" />
+    <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:id="@id/include_head_pepal_tv_head" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="体验达人" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/share_activity_close" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_margin="6.0dip" android:src="@drawable/share_dialog_close" android:layout_centerVertical="true" />
+</RelativeLayout>

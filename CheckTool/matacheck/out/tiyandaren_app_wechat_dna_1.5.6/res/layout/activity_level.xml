@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/bg_darendengji" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/fenxiang_darendengji" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/x19" android:layout_marginTop="@dimen/y90" android:layout_marginRight="@dimen/x19" android:layout_marginBottom="@dimen/y30">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginTop="34.0dip">
+                <ImageView android:id="@id/activity_level_iv_icon_level" android:background="@drawable/darenicon" android:layout_width="55.0dip" android:layout_height="55.0dip" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                    <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:id="@id/activity_level_tv_level_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="青铜达人" />
+                    <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/activity_level_tv_level_state" android:background="@drawable/bg_drawer_level" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="LV1" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/activity_level_tv_level_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="潮流追随者" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="22.0dip">
+                <com.nb.library.customview.CircleImageView android:id="@id/activity_level_iv_icon_head" android:layout_width="65.0dip" android:layout_height="65.0dip" android:src="@drawable/ic_launcher" />
+                <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/activity_level_tv_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginRight="3.0dip" android:text="送给熊熊" />
+                <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/activity_level_tv_user_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="ID:518518" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="17.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="18.0dip" android:layout_marginBottom="23.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:orientation="horizontal" android:background="@drawable/bg_activity_level_item" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="4.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="16.0sp" android:textColor="#ff4f1b01" android:layout_gravity="center_vertical" android:id="@id/activity_level_tv_use_data_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="使用天数" />
+                    <TextView android:textSize="16.0sp" android:textColor="#ff4f1b01" android:layout_gravity="right|center" android:id="@id/activity_level_tv_use_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10天" />
+                </FrameLayout>
+                <FrameLayout android:orientation="horizontal" android:background="@drawable/bg_activity_level_item" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="4.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="16.0sp" android:textColor="#ff4f1b01" android:layout_gravity="center_vertical" android:id="@id/activity_level_tv_income_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="总收入" />
+                    <TextView android:textSize="16.0sp" android:textColor="#ff4f1b01" android:layout_gravity="right|center" android:id="@id/activity_level_tv_incom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="25.5元" />
+                </FrameLayout>
+                <FrameLayout android:orientation="horizontal" android:background="@drawable/bg_activity_level_item" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="4.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="16.0sp" android:textColor="#ff4f1b01" android:layout_gravity="center_vertical" android:id="@id/activity_level_tv_follow_reward_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="收徒奖励" />
+                    <TextView android:textSize="16.0sp" android:textColor="#ff4f1b01" android:layout_gravity="right|center" android:id="@id/activity_level_tv_follow_reward" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10.0元" />
+                </FrameLayout>
+                <FrameLayout android:orientation="horizontal" android:background="@drawable/bg_activity_level_item" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="4.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="16.0sp" android:textColor="#ff4f1b01" android:layout_gravity="center_vertical" android:id="@id/activity_level_tv_follow_num_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="徒弟人数" />
+                    <TextView android:textSize="16.0sp" android:textColor="#ff4f1b01" android:layout_gravity="right|center" android:id="@id/activity_level_tv_follow_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2人" />
+                </FrameLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23.0dip" android:layout_marginBottom="35.0dip">
+            <ImageButton android:id="@id/activity_level_bt_share" android:background="@drawable/btn_shaiyishai" android:layout_width="wrap_content" android:layout_height="@dimen/x40" android:layout_marginLeft="@dimen/x63" android:layout_marginRight="@dimen/x63" />
+            <TextView android:textSize="13.0sp" android:textColor="#ff531f06" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="( 点击晒一晒，会有惊喜哦！)" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:background="#ff1d1d1d" android:paddingTop="@dimen/y10" android:paddingBottom="@dimen/y10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/activity_level_tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:layout_centerInParent="true" />
+        <ImageButton android:id="@id/activity_level_bt_fanhui" android:background="@drawable/icon_fanhui" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x13" />
+    </RelativeLayout>
+</FrameLayout>

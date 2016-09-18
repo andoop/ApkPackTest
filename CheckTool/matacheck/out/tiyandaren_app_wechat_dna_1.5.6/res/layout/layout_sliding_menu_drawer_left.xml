@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_layout_sliding_menu_drawer_left" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/layout_sliding_menu_drawer_left_ll_user" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/layout_sliding_menu_drawer_left_ll" android:background="@drawable/bg_drawer_header" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:layout_centerHorizontal="true">
+            <com.nb.library.customview.CircleImageView android:id="@id/layout_sliding_menu_drawer_left_iv_ava" android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/ic_launcher" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/layout_sliding_menu_drawer_left_ll_level" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="#ff26c3ff" android:id="@id/layout_sliding_menu_drawer_left_tv_gradename" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="青铜达人" />
+                <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/layout_sliding_menu_drawer_left_tv_gradelevel" android:background="@drawable/bg_drawer_level" android:paddingLeft="8.0dip" android:paddingTop="1.0dip" android:paddingRight="8.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="LV1" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/layout_sliding_menu_drawer_left_tv_name" android:padding="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="无名的菜花" android:layout_below="@id/layout_sliding_menu_drawer_left_ll" android:layout_centerHorizontal="true" />
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_silding_menu_dr" android:paddingLeft="10.0dip" android:paddingTop="3.0dip" android:paddingRight="10.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:layout_below="@id/layout_sliding_menu_drawer_left_tv_name" android:layout_centerHorizontal="true">
+            <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="达人ID" />
+            <TextView android:textSize="17.0sp" android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:id="@id/layout_sliding_menu_drawer_left_tv_user_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="0" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/bg_layout_sliding_menu_drawer_left_detail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_above="@id/layout_sliding_menu_drawer_left_btn_withdraw_deposit" android:layout_below="@id/layout_sliding_menu_drawer_left_ll_user">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_sliding_menu_drawer_left_ll_coins" android:background="@drawable/bg_layout_sliding_menu_drawer_coins" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:layout_centerHorizontal="true">
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/layout_sliding_menu_drawer_left_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="可提金额" />
+            <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/layout_sliding_menu_drawer_left_tv_coins" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="0元" android:layout_below="@id/layout_sliding_menu_drawer_left_tv" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_sliding_menu_drawer_left_ll_coins">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <LinearLayout android:orientation="vertical" android:id="@id/layout_sliding_menu_drawer_left_ll_total_coins" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                            <ImageView android:layout_gravity="center_horizontal" android:id="@id/layout_sliding_menu_drawer_left_iv_total_coins" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginBottom="3.0dip" android:src="@drawable/drawer_left_income_detail" android:scaleType="fitXY" />
+                            <TextView android:textSize="14.0sp" android:textStyle="bold" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:text="所有收入" />
+                            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:textSize="17.0sp" android:textColor="#ffa7a7a7" android:layout_gravity="bottom" android:id="@id/layout_sliding_menu_drawer_left_tv_total_coins" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="0" />
+                                <TextView android:textSize="12.0sp" android:textColor="#ffa7a7a7" android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <View android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" />
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <LinearLayout android:orientation="vertical" android:id="@id/layout_sliding_menu_drawer_left_ll_withdraw_deposit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                            <ImageView android:layout_gravity="center_horizontal" android:id="@id/layout_sliding_menu_drawer_left_iv_withdraw_deposit" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginBottom="3.0dip" android:src="@drawable/drawer_left_withdraw_detail" android:scaleType="fitXY" />
+                            <TextView android:textSize="14.0sp" android:textStyle="bold" android:layout_gravity="center_horizontal" android:id="@id/layout_sliding_menu_drawer_left_text_withdraw_deposit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:text="已提金额" />
+                            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:textSize="17.0sp" android:textColor="#ffa7a7a7" android:layout_gravity="bottom" android:id="@id/layout_sliding_menu_drawer_left_tv_withdraw_deposit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="0" />
+                                <TextView android:textSize="12.0sp" android:textColor="#ffa7a7a7" android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <View android:background="#ffe7e7e7" android:layout_width="1.0px" android:layout_height="fill_parent" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <LinearLayout android:orientation="vertical" android:id="@id/layout_sliding_menu_drawer_left_ll_friend_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                            <ImageView android:layout_gravity="center_horizontal" android:id="@id/layout_sliding_menu_drawer_left_iv_friend_count" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginBottom="3.0dip" android:src="@drawable/drawer_left_invite_friend_detail" android:scaleType="fitXY" />
+                            <TextView android:textSize="14.0sp" android:textStyle="bold" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:text="邀请好友" />
+                            <TextView android:textSize="12.0sp" android:textColor="#ffa7a7a7" android:layout_gravity="center_horizontal" android:id="@id/layout_sliding_menu_drawer_left_tv_friend_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="可获得积分" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <View android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" />
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <LinearLayout android:orientation="vertical" android:id="@id/layout_sliding_menu_drawer_left_ll_invite_coins" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                            <ImageView android:layout_gravity="center_horizontal" android:id="@id/layout_sliding_menu_drawer_left_iv_invite_coins" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginBottom="3.0dip" android:src="@drawable/drawer_left_invite_detail" android:scaleType="fitXY" />
+                            <TextView android:textSize="14.0sp" android:textStyle="bold" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:text="邀请记录" />
+                            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:textSize="17.0sp" android:textColor="#ffa7a7a7" android:layout_gravity="bottom" android:id="@id/layout_sliding_menu_drawer_left_tv_invite_coins" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="0" />
+                                <TextView android:textSize="12.0sp" android:textColor="#ffa7a7a7" android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <Button android:textColor="#ffffffff" android:gravity="center" android:id="@id/layout_sliding_menu_drawer_left_btn_withdraw_deposit" android:background="@drawable/bg_bt_entry" android:layout_width="@dimen/x180" android:layout_height="@dimen/y25" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:text="提现" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/dengluye" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <ImageButton android:id="@id/fragment_wx_login_denglu" android:background="@drawable/btn_denglu" android:layout_width="@dimen/x180" android:layout_height="@dimen/y30" android:layout_marginBottom="@dimen/y30" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

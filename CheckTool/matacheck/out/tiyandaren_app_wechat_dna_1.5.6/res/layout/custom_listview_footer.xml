@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/custom_listview_footer_content" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ProgressBar android:id="@id/custom_listview_footer_progressbar" android:visibility="invisible" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_centerInParent="true" />
+        <TextView android:textSize="12.0dip" android:textColor="#ffaeaeae" android:id="@id/custom_listview_footer_hint_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_listview_footer_hint_normal" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

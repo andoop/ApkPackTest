@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/tanchuang" android:layout_width="@dimen/dialog_width" android:layout_height="@dimen/dialog_height">
+        <ImageButton android:id="@id/layout_no_wxapp_alertwindow_confirm" android:background="@drawable/btn_queding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="28.0sp" android:textColor="#fffcf7d1" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="您没有安装微信请安装后再登陆" android:lines="2" android:ems="6" android:shadowColor="#ff000000" android:shadowDx="-2.0" android:shadowDy="-2.0" android:shadowRadius="1.0" android:layout_centerInParent="true" android:lineSpacingExtra="4.0dip" />
+    </RelativeLayout>
+</FrameLayout>

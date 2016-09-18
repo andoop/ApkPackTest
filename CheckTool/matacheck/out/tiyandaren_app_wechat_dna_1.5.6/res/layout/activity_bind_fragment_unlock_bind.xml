@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffececec" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/include_head_pepal" layout="@layout/include_head_pepal" />
+    <ImageView android:id="@id/activity_bind_fragment_iv_top_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/img_loading_top_line" android:scaleType="fitXY" android:layout_below="@id/include_head_pepal" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/bg_error" android:scaleType="fitXY" android:layout_below="@id/activity_bind_fragment_iv_top_line" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/activity_bind_fragment_iv_top_line">
+        <ImageView android:background="#b2ffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:layout_weight="1.0" />
+        <ImageView android:background="#66000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ImageView android:id="@id/activity_bind_fragment_unlock_bind_iv_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginTop="38.0dip" android:src="@drawable/icon_back" android:layout_below="@id/activity_bind_fragment_iv_top_line" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:layout_below="@id/activity_bind_fragment_iv_top_line">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_flag" />
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="center_horizontal" android:background="@drawable/bg_unlock_title" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="解锁任务大厅" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="#ffffffff" android:paddingBottom="28.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-1.0dip">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="45.0dip" android:layout_marginTop="50.0dip" android:layout_marginRight="45.0dip">
+                <EditText android:textSize="16.0sp" android:textColor="#ffa3a3a3" android:gravity="center" android:id="@id/activity_bind_fragment_unlock_bind_et_unlock" android:background="@drawable/bg_et_unlock" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="请输入解锁码" android:singleLine="true" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/icon_key_unlock" />
+            </RelativeLayout>
+            <TextView android:textSize="17.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/activity_bind_fragment_unlock_bind_btn_unlock" android:background="@drawable/bg_btn_bind_way_go_wx" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="60.0dip" android:text="解锁" android:drawablePadding="15.0dip" />
+        </LinearLayout>
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/img_sawtooth" android:scaleType="fitXY" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:isl="http://schemas.android.com/apk/res-auto">
+    <cn.dm.wxtry.view.ImprovedSwipeLayout android:id="@id/layout_offerwall_fragment_list_srl" android:layout_width="fill_parent" android:layout_height="fill_parent" isl:scrollableChildId="@id/layout_offerwall_fragment_list_lv">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.nb.library.customview.pullrefreshlistview.CustomPullRefreshListView android:id="@id/layout_offerwall_fragment_list_lv" android:background="#ffffffff" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="#ffe7e7e7" android:dividerHeight="1.0px" />
+            <include layout="@layout/layout_renwuliebiao_empty" />
+            <include layout="@layout/layout_qiandaoliebiao_empty" />
+        </FrameLayout>
+    </cn.dm.wxtry.view.ImprovedSwipeLayout>
+</FrameLayout>

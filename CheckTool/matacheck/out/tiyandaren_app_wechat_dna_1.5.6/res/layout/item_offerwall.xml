@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="#ff1c1c1c" android:gravity="center_vertical" android:id="@id/item_offerwall_tv_executable_title" android:background="#ffececec" android:paddingLeft="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="今日可做任务" />
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/item_offerwall_item" android:background="@drawable/bg_item_offerwall" android:layout_width="fill_parent" android:layout_height="75.0dip">
+        <ImageView android:gravity="center" android:id="@id/item_offerwall_iv_icon" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_launcher" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/item_offerwall_tv_coin" android:background="@drawable/bg_btn_item_offerwall" android:layout_width="100.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:text="150元" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="6.0dip" android:layout_toLeftOf="@id/item_offerwall_tv_coin" android:layout_toRightOf="@id/item_offerwall_iv_icon" android:layout_centerVertical="true">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="#ff282323" android:gravity="center" android:id="@id/item_offerwall_tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我叫MT" android:maxEms="8" android:singleLine="true" />
+                <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/item_offerwall_tv_status" android:background="@drawable/bg_tv_offer_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="可完成" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="#ff808080" android:id="@id/item_offerwall_tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="可做时间: 2012-06-18" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffe52b00" android:id="@id/item_offerwall_tv_describe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="我是描述描述描述我是描述描述描述" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

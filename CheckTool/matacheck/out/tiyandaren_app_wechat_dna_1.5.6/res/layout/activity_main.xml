@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_main_ll" android:background="#ffececec" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/include_head_pepal" />
+        <TextView android:textSize="18.0sp" android:textColor="@android:color/black" android:gravity="center" android:id="@id/activity_main_tv_loading" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="正在拼命加载中..." />
+    </LinearLayout>
+</FrameLayout>

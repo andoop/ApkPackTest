@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/layout_special_gv_item_tody_rootview" android:background="@drawable/bg_special_gv_item_tody" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="8.0dip">
+        <ImageView android:id="@id/layout_special_gv_item_tody_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_qiandao" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="5.0dip">
+            <TextView android:textSize="@dimen/gv_item_comment_font_size" android:textColor="#ff000000" android:ellipsize="marquee" android:gravity="center" android:id="@id/layout_special_gv_item_tody_tv_desc" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="完成5个签到+2个下载任务" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+            <TextView android:textSize="11.0sp" android:textColor="#ffffffff" android:id="@id/layout_special_gv_item_tody_tv_reward" android:background="@drawable/bg_special_gv_item_reward_tody" android:paddingLeft="5.0dip" android:paddingTop="1.0dip" android:paddingRight="5.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="+0.5元" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                <TextView android:textSize="11.0sp" android:textColor="@android:color/darker_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="完成进度：" />
+                <TextView android:textSize="11.0sp" android:textColor="#ff000000" android:id="@id/layout_special_gv_item_tody_tv_jindu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0/6" />
+            </LinearLayout>
+            <Button android:textSize="@dimen/gv_item_comment_font_size" android:textColor="#ffffffff" android:gravity="center" android:id="@id/layout_special_gv_item_tody_bt_lingqu" android:background="@drawable/bg_special_gv_item_bt_tody" android:paddingLeft="15.0dip" android:paddingTop="2.0dip" android:paddingRight="15.0dip" android:paddingBottom="2.0dip" android:layout_width="@dimen/x73" android:layout_height="@dimen/y15" android:layout_marginTop="5.0dip" android:text="领取奖励" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/layout_special_gv_item_tody_iv_dis" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/xianshilingqu" />
+</FrameLayout>

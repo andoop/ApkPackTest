@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.TextAppearance.AppCompat.Inverse" parent="@android:style/Widget.TextView.ListSeparator.White" />
+    <style name="Base.TextAppearance.AppCompat.Large.Inverse" parent="@android:style/Widget.NumberPicker" />
+    <style name="Base.TextAppearance.AppCompat.Medium.Inverse" parent="@android:style/Widget.ImageButton.NumberPickerUpButton" />
+    <style name="Base.TextAppearance.AppCompat.Small.Inverse" parent="@android:style/Widget.QuickContactBadgeSmall.WindowSmall" />
+    <style name="Base.Theme.AppCompat.Dialog" parent="@style/Base.V21.Theme.AppCompat.Dialog" />
+    <style name="Base.Theme.AppCompat.Light.Dialog" parent="@style/Base.V21.Theme.AppCompat.Light.Dialog" />
+    <style name="Base.Widget.AppCompat.ProgressBar" parent="@android:style/Widget.Holo.Light.TextSuggestionsPopupWindow" />
+    <style name="Base.Widget.AppCompat.ProgressBar.Horizontal" parent="@android:style/Widget.Holo.Light.AbsListView" />
+    <style name="Base.Widget.AppCompat.Spinner" parent="@android:style/Widget.Holo.Light.ListView.White" />
+    <style name="Platform.AppCompat" parent="@android:style/Preference.Holo.DialogPreference.YesNoPreference">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:buttonBarStyle">?buttonBarStyle</item>
+        <item name="android:buttonBarButtonStyle">?buttonBarButtonStyle</item>
+    </style>
+    <style name="Platform.AppCompat.Light" parent="@android:style/TextAppearance.Holo.CalendarViewWeekDayView">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:buttonBarStyle">?buttonBarStyle</item>
+        <item name="android:buttonBarButtonStyle">?buttonBarButtonStyle</item>
+    </style>
+    <style name="Base.Widget.AppCompat.AutoCompleteTextView" parent="@android:style/Widget.Holo.ExpandableListView.White" />
+    <style name="Base.TextAppearance.AppCompat.Button" parent="@android:style/TextAppearance.EasyCorrectSuggestion" />
+    <style name="Base.TextAppearance.AppCompat" parent="@android:style/TextAppearance.Suggestion" />
+    <style name="Base.TextAppearance.AppCompat.Body1" parent="@android:style/TextAppearance.AutoCorrectionSuggestion" />
+    <style name="Base.TextAppearance.AppCompat.Body2" parent="@android:style/TextAppearance.MisspelledSuggestion" />
+    <style name="Base.TextAppearance.AppCompat.Caption" parent="@android:style/Widget.GestureOverlayView" />
+    <style name="Base.TextAppearance.AppCompat.Display1" parent="@android:style/Widget.RatingBar.Small" />
+    <style name="Base.TextAppearance.AppCompat.Display2" parent="@android:style/Widget.RatingBar.Indicator" />
+    <style name="Base.TextAppearance.AppCompat.Display3" parent="@android:style/Widget.ProgressBar.Small.Title" />
+    <style name="Base.TextAppearance.AppCompat.Display4" parent="@android:style/Widget.Button.Transparent" />
+    <style name="Base.TextAppearance.AppCompat.Headline" parent="@android:style/Widget.TextView.ListSeparator" />
+    <style name="Base.TextAppearance.AppCompat.Large" parent="@android:style/Widget.ExpandableListView.White" />
+    <style name="Base.TextAppearance.AppCompat.Light.Widget.PopupMenu.Large" parent="@android:style/Preference.RingtonePreference" />
+    <style name="Base.TextAppearance.AppCompat.Light.Widget.PopupMenu.Small" parent="@android:style/Preference.Holo" />
+    <style name="Base.TextAppearance.AppCompat.Medium" parent="@android:style/Widget.TimePicker" />
+    <style name="Base.TextAppearance.AppCompat.Menu" parent="@android:style/Widget.ImageButton.NumberPickerDownButton" />
+    <style name="Base.TextAppearance.AppCompat.SearchResult.Subtitle" parent="@android:style/Widget.QuickContactBadge.WindowSmall" />
+    <style name="Base.TextAppearance.AppCompat.SearchResult.Title" parent="@android:style/Widget.QuickContactBadge.WindowMedium" />
+    <style name="Base.TextAppearance.AppCompat.Small" parent="@android:style/Widget.QuickContactBadge.WindowLarge" />
+    <style name="Base.TextAppearance.AppCompat.Subhead" parent="@android:style/Widget.QuickContactBadgeSmall.WindowMedium" />
+    <style name="Base.TextAppearance.AppCompat.Title" parent="@android:style/Widget.QuickContactBadgeSmall.WindowLarge" />
+    <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Menu" parent="@android:style/TextAppearance.SlidingTabNormal" />
+    <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle" parent="@android:style/TextAppearance.SlidingTabActive" />
+    <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse" parent="@android:style/TextAppearance.SearchResult" />
+    <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Title" parent="@android:style/TextAppearance.Large.Inverse.NumberPickerInputText" />
+    <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse" parent="@android:style/Widget.ActivityChooserView" />
+    <style name="Base.TextAppearance.AppCompat.Widget.ActionMode.Subtitle" parent="@android:style/Preference" />
+    <style name="Base.TextAppearance.AppCompat.Widget.ActionMode.Title" parent="@android:style/Preference.Information" />
+    <style name="Base.TextAppearance.AppCompat.Widget.PopupMenu.Large" parent="@android:style/Preference.RingtonePreference" />
+    <style name="Base.TextAppearance.AppCompat.Widget.PopupMenu.Small" parent="@android:style/Preference.Holo" />
+    <style name="Base.TextAppearance.AppCompat.Widget.Switch" parent="@android:style/TextAppearance.EasyCorrectSuggestion" />
+    <style name="Base.TextAppearance.AppCompat.Widget.TextView.SpinnerItem" parent="@android:style/Preference.Holo.CheckBoxPreference" />
+    <style name="Base.TextAppearance.Widget.AppCompat.Toolbar.Subtitle" parent="@android:style/TextAppearance.SlidingTabActive" />
+    <style name="Base.TextAppearance.Widget.AppCompat.Toolbar.Title" parent="@android:style/TextAppearance.Large.Inverse.NumberPickerInputText" />
+    <style name="Base.Theme.AppCompat" parent="@style/Base.V21.Theme.AppCompat" />
+    <style name="Base.Theme.AppCompat.Light" parent="@style/Base.V21.Theme.AppCompat.Light" />
+    <style name="Base.Widget.AppCompat.ActionBar.TabText" parent="@android:style/Widget.Holo.StackView" />
+    <style name="Base.Widget.AppCompat.ActionBar.TabView" parent="@android:style/Widget.Holo.TextView.ListSeparator" />
+    <style name="Base.Widget.AppCompat.ActionButton" parent="@android:style/Widget.Holo.TextSelectHandle" />
+    <style name="Base.Widget.AppCompat.ActionButton.CloseMode" parent="@android:style/Widget.Holo.TextSuggestionsPopupWindow">
+        <item name="android:minWidth">56.0dip</item>
+    </style>
+    <style name="Base.Widget.AppCompat.ActionButton.Overflow" parent="@android:style/Widget.Holo.AbsListView" />
+    <style name="Base.Widget.AppCompat.Button" parent="@android:style/Widget.Holo.Gallery" />
+    <style name="Base.Widget.AppCompat.Button.Borderless" parent="@android:style/Widget.Holo.GestureOverlayView" />
+    <style name="Base.Widget.AppCompat.Button.Borderless.Colored" parent="@android:style/Widget.Holo.NumberPicker" />
+    <style name="Base.Widget.AppCompat.Button.Small" parent="@android:style/Widget.Holo.ImageButton.NumberPickerDownButton" />
+    <style name="Base.Widget.AppCompat.ButtonBar" parent="@android:style/Widget.Holo.ActivityChooserView" />
+    <style name="Base.Widget.AppCompat.CompoundButton.CheckBox" parent="@android:style/Widget.Holo.ProgressBar.Inverse" />
+    <style name="Base.Widget.AppCompat.CompoundButton.RadioButton" parent="@android:style/Widget.Holo.ProgressBar.Small.Inverse" />
+    <style name="Base.Widget.AppCompat.DropDownItem.Spinner" parent="@android:style/Widget.Holo.TabText" />
+    <style name="Base.Widget.AppCompat.Light.ActionBar.TabText" parent="@android:style/AlertDialog.Holo" />
+    <style name="Base.Widget.AppCompat.Light.ActionBar.TabText.Inverse" parent="@android:style/AlertDialog.Holo" />
+    <style name="Base.Widget.AppCompat.Light.ActionBar.TabView" parent="@android:style/AlertDialog.Holo.Light
