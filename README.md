@@ -99,6 +99,8 @@
         return "";
     }
 
+>6、渠道检验：一般的检验方式就是通过抓包或者log查看channel信息，首先方法比较low，同时也不适合批量检验，可以通过mate-data查看工具进行批量检查，[进入介绍并get工具](https://github.com/andoop/Metadatachecker)
+
 ####缺点
 
 >这样的打包方式效率比较低下，如果是几十个包还可以应付，打一个包快的话需要十几秒，慢的话需要几分钟不等，跟机器性能很有关系
@@ -165,5 +167,4 @@
 
 >渠道信息也是很容易修改，虽然可以加密，只是提高了修改的门槛
 
-###
-主要参考：https://mp.weixin.qq.com/s?__biz=MzA4MzEwOTkyMQ==&mid=2667374595&idx=1&sn=96fe214204da55caa3e583039352f57c&scene=1&srcid=0526z8qs53Na9zgREPwwnwDo&key=f5c31ae61525f82e5eef53cc0fef95064d607ec207c7c97b0ef3c414a5763622ab45f2a4ee73fef99080a2473c6ec7f1&ascene=0&uin=MTYzMjY2MTE1&devicetype=iMac+MacBookPro10%2C1+OSX+OSX+10.11.4+build(15E65)&version=11020201&pass_ticket=JtFbOWzVz0QaHe5dN1epxdryv2HEDINGpaqXxeWcwGI%3D
+#####欢迎关注andoop，每周一、二，干货分享永不停！
